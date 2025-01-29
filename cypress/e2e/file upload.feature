@@ -4,4 +4,4 @@ Feature: File Upload Functionality
         Given I navigate to the file upload page
         When I upload "hello.pdf"
         Then I should see the uploaded file name
-        # And the file content should match "Hello World!"
+        And the file content should match "Hello World!"

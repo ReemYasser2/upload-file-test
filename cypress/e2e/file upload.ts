@@ -13,8 +13,8 @@ Then("I should see the uploaded file name", () => {
   assertFileUpload('hello.pdf');
 });
 
-// Then("the file content should match {string}", (expectedContent: string) => {
-//   cy.readFile(`cypress/fixtures/${filePath}`).then((content) => {
-//     expect(content).to.include(expectedContent);
-//   });
-// });
+Then("the file content should match {string}", (expectedContent: string) => {
+  cy.readFile("cypress/fixtures/hello.pdf").then((content) => {
+    expect(content).to.include(expectedContent);
+  });
+});
